@@ -38,4 +38,4 @@ A ordem é definida pela idade dos participantes, O mais velho é o primeiro a f
      - Quem acertou ganha os pontos da palavra, juntamente com quem fez a mimica
 
 ### Vitória
-Ganha quem atingir primeiro a pontuação máxima definida.
+Ganha quem atingir 30 pontos primeiro.
