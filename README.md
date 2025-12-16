@@ -1,6 +1,6 @@
 # MimiShow
 
-Jogo de mímica online para jogar com amigos.
+Jogo de mímica para jogar com amigos localmente.
 
 ## Regras - Modo Individual
 
