@@ -12,6 +12,14 @@ export interface Voice {
   volume?: number;
 }
 
+export interface AudioSession {
+  type: string;
+}
+
+export interface AudioSessionNavigator extends Navigator {
+  audioSession?: AudioSession;
+}
+
 export type SoundName = keyof typeof SOUNDS;
 
 export interface SoundContextValue {

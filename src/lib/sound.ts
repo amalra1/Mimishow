@@ -1,17 +1,26 @@
 import { MASTER_VOLUME, NOISE_FILTER_Q } from '@/constants/sound';
-import type { Voice } from '@/types/sound';
+import type { AudioSessionNavigator, Voice } from '@/types/sound';
 
 const ATTACK_SECONDS = 0.005;
 const SILENCE = 0.0001;
 const NOISE_SECONDS = 1;
+const PLAYBACK_SESSION = 'playback';
 
 let context: AudioContext | null = null;
 let noise: AudioBuffer | null = null;
 
+function preferPlayback() {
+  const { audioSession } = navigator as AudioSessionNavigator;
+  if (audioSession && audioSession.type !== PLAYBACK_SESSION) {
+    audioSession.type = PLAYBACK_SESSION;
+  }
+}
+
 function audioContext() {
   if (typeof window === 'undefined' || !('AudioContext' in window)) return null;
+  preferPlayback();
   context ??= new AudioContext();
-  if (context.state === 'suspended') void context.resume();
+  if (context.state !== 'running') void context.resume();
   return context;
 }
 
