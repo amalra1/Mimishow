@@ -4,6 +4,8 @@ The charades game show for one phone and a whole crowd. Set up the cast, pass th
 
 No sign-up and no server. Everything runs in the browser and the game is saved on the device, so a reload or a locked screen doesn't lose the show. The interface is in Portuguese, with an English toggle.
 
+![MimiShow on a phone: the home screen, a word drawn behind the curtain and the acting timer](docs/preview.png)
+
 ## Stack
 
 Next.js 16 (static export), React 19, TypeScript, GSAP and CSS Modules.
@@ -19,7 +21,7 @@ npm run build      # static export in out/
 
 ## Rules
 
-- **Modes**: every star for themselves (2 to 15 players) or teams (2 to 4 teams, at least 2 players each).
+- **Modes**: every star for themselves (2 to 15 players) or teams (2 to 4 teams, at least 2 players each). Teams are picked by hand, one card per team, or shuffled at random.
 - **Order**: players are added from oldest to youngest, and that is the acting order. Teams take turns and rotate who acts.
 - **House rules**: sliders for the points to win (10 to 60), the time to act (30 to 180 s) and the free swaps (0 to 5), plus the word categories in play.
 - **Words**: 360 things (single nouns, no actions), localized for Brazil, in 10 categories: animals, food and drinks, objects, places, jobs, characters and celebrities, sports and games, music and parties, nature, transportation. Every category has easy, medium and hard words.
