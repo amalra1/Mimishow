@@ -1,0 +1,73 @@
+.mimi {
+  --size: 132px;
+  --whisper-size: var(--text-lg);
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--size) minmax(0, 1fr);
+  align-items: start;
+}
+
+.sm {
+  --size: 92px;
+  --whisper-size: var(--text-md);
+}
+
+.lg {
+  --size: clamp(130px, 19svh, 230px);
+  --whisper-size: var(--text-lg);
+}
+
+.figure {
+  width: var(--size);
+}
+
+.trail {
+  position: absolute;
+  left: calc(var(--size) * 0.6);
+  top: calc(var(--size) * 0.5);
+  width: calc(var(--size) * 0.46);
+  height: calc(var(--size) * 0.2);
+  overflow: visible;
+  pointer-events: none;
+}
+
+.trail path {
+  fill: none;
+  stroke: var(--fg-dim);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-dasharray: 2 6;
+  vector-effect: non-scaling-stroke;
+  animation: breathe 1.6s linear infinite;
+}
+
+.text {
+  margin: calc(var(--size) * 0.5) 0 0 calc(var(--size) * 0.12);
+  font-size: var(--whisper-size);
+  line-height: 1.25;
+  overflow-wrap: break-word;
+  color: var(--fg);
+  animation: waver 5s ease-in-out infinite;
+}
+
+.ghost {
+  color: transparent;
+}
+
+@keyframes breathe {
+  to {
+    stroke-dashoffset: -16;
+  }
+}
+
+@keyframes waver {
+  0%,
+  100% {
+    translate: 0 0;
+    opacity: 1;
+  }
+  50% {
+    translate: 1px -2px;
+    opacity: 0.86;
+  }
+}

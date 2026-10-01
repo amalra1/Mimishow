@@ -1,0 +1,78 @@
+.track {
+  --progress: 0;
+  display: grid;
+  gap: var(--space-2);
+  padding-top: 22px;
+}
+
+.rail {
+  position: relative;
+  height: var(--stroke);
+  margin-inline: 1.2rem;
+  background: var(--line-strong);
+}
+
+.lit {
+  position: absolute;
+  inset: -1px auto -1px 0;
+  width: calc(var(--progress) * 100%);
+  background: var(--gold);
+  transition: width var(--dur-slow) var(--ease-out);
+}
+
+.marker {
+  position: absolute;
+  top: 50%;
+  left: calc(var(--progress) * 100%);
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  color: var(--bg);
+  background: var(--gold);
+  border-radius: 50%;
+  translate: -50% -50%;
+  transition: left var(--dur-slow) var(--ease-spring);
+}
+
+.mask {
+  width: 22px;
+  height: 22px;
+}
+
+.acts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: var(--space-3);
+}
+
+.act {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  color: var(--fg-faint);
+  text-align: center;
+  transition: color var(--dur);
+}
+
+.act:first-child {
+  justify-items: start;
+  text-align: left;
+}
+
+.act:last-child {
+  justify-items: end;
+  text-align: right;
+}
+
+.numeral {
+  font-size: var(--text-md);
+}
+
+.done {
+  color: var(--fg-dim);
+}
+
+.current {
+  color: var(--gold);
+}

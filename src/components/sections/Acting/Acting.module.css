@@ -1,0 +1,37 @@
+.emblem {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(118vw, 470px);
+  color: var(--wine);
+  opacity: 0.45;
+  translate: -50% -50%;
+  animation: turn 40s linear infinite;
+  pointer-events: none;
+}
+
+.silence {
+  font-size: var(--text-xl);
+  line-height: 1;
+  color: var(--crimson);
+  text-align: center;
+  animation: hush 2.4s ease-in-out infinite;
+}
+
+.clock {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+@keyframes hush {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes turn {
+  to {
+    rotate: 360deg;
+  }
+}

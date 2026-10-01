@@ -1,0 +1,28 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: radial-gradient(
+    130% 90% at 50% 0%,
+    var(--bg-2) 0%,
+    var(--bg) 70%
+  );
+}
+
+.emblem {
+  position: absolute;
+  right: -38vmin;
+  bottom: -34vmin;
+  width: 95vmin;
+  color: var(--wine);
+  opacity: 0.32;
+  animation: turn 180s linear infinite;
+}
+
+@keyframes turn {
+  to {
+    rotate: 360deg;
+  }
+}

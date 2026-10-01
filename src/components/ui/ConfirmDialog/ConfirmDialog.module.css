@@ -1,0 +1,31 @@
+.peek {
+  position: absolute;
+  top: -78px;
+  left: 50%;
+  width: 96px;
+  translate: -50% 0;
+  clip-path: inset(0 0 42% 0);
+}
+
+.line {
+  color: var(--fg-dim);
+  text-align: center;
+}
+
+.title {
+  margin-top: var(--space-3);
+  font-size: var(--text-xl);
+  text-align: center;
+}
+
+.description {
+  margin-top: var(--space-2);
+  color: var(--fg-dim);
+  text-align: center;
+}
+
+.actions {
+  display: grid;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}

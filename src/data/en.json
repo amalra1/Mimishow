@@ -1,0 +1,292 @@
+{
+  "meta": {
+    "home": "MimiShow home",
+    "language": "Switch language",
+    "skip": "Skip to content",
+    "soundOn": "Turn sound on",
+    "soundOff": "Turn sound off",
+    "endShow": "End"
+  },
+  "home": {
+    "kicker": "Tonight, in the dark",
+    "titleMain": "Mimi",
+    "titleAccent": "Show",
+    "tagline": "A charades game for one phone and a whole crowd. Mimi hosts. Nobody talks.",
+    "start": "New show",
+    "resume": "Back to the show",
+    "rules": "How to play",
+    "credit": "Made by",
+    "author": "Pedro Chapelin"
+  },
+  "mascot": {
+    "home": [
+      "Oh, you came. I've been waiting since forever.",
+      "Sit down. The chairs don't bite. Hardly ever.",
+      "Tonight nobody talks. I love silence."
+    ],
+    "murmurs": [
+      "Don't blink.",
+      "I used to be a person too. I think.",
+      "Your shoe is staring at me.",
+      "I counted you. There's one extra.",
+      "Silence is my favorite language.",
+      "I live behind the curtain. It's cozy.",
+      "Has anyone seen my shadow? Oh, it's me.",
+      "Shh. Did you hear that?",
+      "I like you. The way I like cookies."
+    ],
+    "handoff": [
+      "Pass the phone. Slowly. I'm watching.",
+      "Only tonight's star may look. Everyone else, close your eyes. Or don't.",
+      "Shhh. The word is hungry for secrets."
+    ],
+    "reveal": [
+      "Memorize it. Then forget I exist.",
+      "Fate chose for you. I only watched.",
+      "Don't like it? I'll swap it. For a price."
+    ],
+    "acting": [
+      "Move. I know you can.",
+      "Use your whole body. I use all of mine.",
+      "The crowd is quiet. Too quiet."
+    ],
+    "tense": [
+      "Time is running out. Mine never does.",
+      "Tick. Tock. Tick.",
+      "Hurry, before the lights go out."
+    ],
+    "scoring": [
+      "Who was it? You can tell me. I keep secrets.",
+      "Moment of truth. I adore the truth.",
+      "Point at whoever guessed. I'll remember."
+    ],
+    "hit": [
+      "Bravo. I'll keep this applause in a little box.",
+      "Beautiful. I almost cried. Almost.",
+      "You understand each other without words. Like me and the dark."
+    ],
+    "miss": [
+      "Nobody? That's fine. I didn't get it either.",
+      "Total silence. My favorite sound.",
+      "The word ran away. It'll come back. They always do."
+    ],
+    "winner": [
+      "We have a star. I'll add it to my collection.",
+      "End of the show. Or the start of another?",
+      "Applause. Louder. Louder."
+    ],
+    "rules": [
+      "Set it however you like. I adapt to anything.",
+      "Rules are like shadows. Always nearby.",
+      "Choose carefully. Or don't. I'll have fun either way."
+    ],
+    "empty": [
+      "The stage is empty. Just the way I like it.",
+      "Nobody here. Just me. As usual."
+    ],
+    "noSkips": [
+      "No points, no swaps. I don't do credit.",
+      "It'll have to be this one. Be brave."
+    ],
+    "confirm": [
+      "Leaving already? But the night is young.",
+      "Erase everything? I love erasing things."
+    ]
+  },
+  "modes": {
+    "solo": {
+      "title": "Every star for themselves",
+      "description": "Whoever acts and whoever guesses both score. 2 to 15 people."
+    },
+    "teams": {
+      "title": "Teams",
+      "description": "Teams take turns and only your own team guesses. Two or more players per team."
+    }
+  },
+  "difficulties": {
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard"
+  },
+  "categories": {
+    "animals": "Animals",
+    "food": "Food and drinks",
+    "objects": "Objects",
+    "places": "Places",
+    "jobs": "Jobs",
+    "characters": "Characters and celebrities",
+    "sports": "Sports and games",
+    "party": "Music and parties",
+    "nature": "Nature",
+    "transport": "Transportation"
+  },
+  "teamDefaults": ["Red Team", "Gold Team", "Blue Team", "Purple Team"],
+  "wizard": {
+    "progress": "Act {current} of {total}: {name}",
+    "acts": ["Format", "Cast", "Rules"],
+    "back": "Back",
+    "next": "Next",
+    "finish": "Open the curtains",
+    "mode": {
+      "word": "Act I",
+      "title": "How do we play?",
+      "description": "Pick the format of tonight's show."
+    },
+    "players": {
+      "word": "Act II",
+      "title": "The cast",
+      "description": "Add everyone from oldest to youngest. That's the acting order, and you can rearrange it with the arrows.",
+      "teamsDescription": "Type each name in the card of the team they'll play for. Tap a colored arrow to move someone across. The order inside a team is the acting order.",
+      "label": "Player name",
+      "placeholder": "E.g. Ana",
+      "add": "Add player",
+      "count": "{count} of {max} players",
+      "minimum": "At least {min} players",
+      "full": "The cast is full ({max} players).",
+      "alreadyIn": "{name} is already in the cast.",
+      "duplicate": "Repeated",
+      "rename": "Name of player {index}",
+      "remove": "Remove {name}",
+      "moveUp": "Move {name} up",
+      "moveDown": "Move {name} down",
+      "empty": "No one on stage yet. Mimi is getting lonely.",
+      "teamsLabel": "Number of teams",
+      "teamName": "Name of team {index}",
+      "teamSize": "{count} players",
+      "teamTooSmall": "Needs at least {min}",
+      "addTo": "Add to {team}",
+      "moveTo": "Move {name} to {team}",
+      "renameMember": "Name of {name}",
+      "shuffle": "Shuffle teams",
+      "teamEmpty": "Nobody here yet. The seat is cold."
+    },
+    "rules": {
+      "word": "Act III",
+      "title": "House rules",
+      "description": "Drag to adjust. Mimi has opinions about everything.",
+      "target": "Points to win",
+      "targetValue": "{value} pts",
+      "time": "Time to act",
+      "timeValue": "{value} s",
+      "skips": "Free word swaps",
+      "skipsValue": "{value}",
+      "skipsHint": "After those, each swap costs {points} point. No points, no swap.",
+      "categories": "Categories in play",
+      "categoriesHint": "Every category has easy, medium and hard words.",
+      "all": "All",
+      "comments": {
+        "targetLow": "A tiny show. I was getting attached.",
+        "targetHigh": "We'll go until dawn. Wonderful.",
+        "timeLow": "Thirty seconds. What's the rush?",
+        "timeHigh": "An eternity. I adore eternities.",
+        "skipsLow": "No swaps at all. Brave. Or foolish.",
+        "skipsHigh": "So many swaps. Someone's scared.",
+        "categoriesOne": "Just one category. I like obsessions.",
+        "categoriesAll": "Everything at once. Just how I like it."
+      }
+    }
+  },
+  "stage": {
+    "round": "Round {round}",
+    "handoff": {
+      "kicker": "Next on stage",
+      "title": "Pass the phone to",
+      "team": "Acting for {team}",
+      "ready": "That's me",
+      "hint": "Only {name} looks at the screen from now on."
+    },
+    "reveal": {
+      "kicker": "Fate has drawn",
+      "points": "+{points}",
+      "hold": "Hold to see",
+      "holding": "Release to hide",
+      "holdHint": "The word only shows while your finger is on the card.",
+      "skip": "Swap word",
+      "skipsFree": "{count} free swaps left",
+      "skipsFreeOne": "1 free swap left",
+      "skipPenalty": "Swapping now costs {points} point",
+      "noPoints": "No points left to swap",
+      "skipped": "New word. Hold to see it.",
+      "start": "Start acting"
+    },
+    "acting": {
+      "kicker": "On air",
+      "silence": "No talking",
+      "guessed": "They got it",
+      "secondsLeft": "{seconds} seconds left"
+    },
+    "scoring": {
+      "kicker": "Moment of truth",
+      "title": "Who got it?",
+      "wordWas": "The word was",
+      "teamGuessed": "{team} got it",
+      "pick": "Tap whoever guessed first.",
+      "nobody": "Nobody got it"
+    },
+    "result": {
+      "hit": "{name} got it!",
+      "points": "+{points} for {names}",
+      "pair": "{a} and {b}",
+      "word": "Word: {word}",
+      "miss": "Nobody scored",
+      "next": "Next star"
+    },
+    "scoreboard": {
+      "title": "Scoreboard",
+      "target": "Target: {target}"
+    },
+    "skipPenaltyToast": "-{points} point for the swap",
+    "confirmEnd": {
+      "title": "End the show?",
+      "description": "The current game and scores will vanish into the dark.",
+      "confirm": "End show",
+      "cancel": "Keep playing"
+    },
+    "empty": {
+      "title": "Empty stage",
+      "description": "Set up the cast and Mimi takes care of the rest.",
+      "start": "New show"
+    }
+  },
+  "winner": {
+    "kicker": "And tonight's star is",
+    "subtitle": "{score} points",
+    "lastHit": "Final play: {name} guessed {word}, +{points}",
+    "rematch": "Rematch",
+    "newShow": "New show",
+    "home": "Back home"
+  },
+  "rules": {
+    "kicker": "The script",
+    "title": "How to play",
+    "intro": "MimiShow is played with one phone that goes from hand to hand. Mimi takes care of the order, the draw, the timer and the scoreboard.",
+    "steps": [
+      {
+        "title": "Assemble the cast",
+        "body": "Every star for themselves or teams. Add the players from oldest to youngest, set the points, the time and the swaps, and choose the word categories."
+      },
+      {
+        "title": "Get your word",
+        "body": "Whoever acts taps \"That's me\". The difficulty is drawn at random (easy is worth 1 point, medium 2, hard 3) and the word only shows while a finger holds the card."
+      },
+      {
+        "title": "Swap if you need",
+        "body": "Each turn has some free swaps. After that, every swap costs 1 point, and with no points you can't swap."
+      },
+      {
+        "title": "Act it out",
+        "body": "Start the timer and act out the word without talking, sounds or pointing at objects. Everyone else shouts their guesses."
+      },
+      {
+        "title": "Score",
+        "body": "Solo: the guesser and the performer both score. Teams: the team scores. If time runs out with no guess, nobody scores."
+      },
+      {
+        "title": "Close the curtains",
+        "body": "Whoever reaches the target first wins on the spot, and the show ends."
+      }
+    ],
+    "forbidden": "Off limits: talking, mouthing words, spelling letters in the air and pointing at the object itself.",
+    "start": "Start a show"
+  }
+}

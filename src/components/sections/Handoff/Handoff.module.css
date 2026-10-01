@@ -1,0 +1,28 @@
+.name {
+  font-size: var(--text-3xl);
+  font-weight: 900;
+  line-height: 0.95;
+  color: var(--tone);
+  overflow-wrap: anywhere;
+  animation: materialize 0.9s var(--ease-out);
+}
+
+.team {
+  justify-self: start;
+  padding: 0.4em 0.9em;
+  color: var(--bg);
+  background: var(--tone);
+  border-radius: var(--radius);
+}
+
+.hint {
+  color: var(--fg-dim);
+}
+
+@keyframes materialize {
+  from {
+    opacity: 0;
+    filter: blur(14px);
+    letter-spacing: 0.2em;
+  }
+}

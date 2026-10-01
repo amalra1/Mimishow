@@ -1,0 +1,46 @@
+.preloader {
+  --edge: 10px;
+  position: fixed;
+  inset: 0 0 calc(var(--edge) * -1) 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  color: var(--fg);
+  background: repeating-linear-gradient(
+    90deg,
+    var(--wine) 0 28px,
+    #861c3b 28px 34px
+  );
+  border-bottom: var(--edge) solid var(--gold);
+  animation: failsafe-hide 0.3s ease-out 6s forwards;
+}
+
+.symbol,
+.ring {
+  grid-area: 1 / 1;
+  width: clamp(96px, 14vw, 136px);
+  aspect-ratio: 1;
+  opacity: 0;
+}
+
+.symbol {
+  height: auto;
+}
+
+.ring {
+  border: 3px solid var(--gold);
+  border-radius: 50%;
+}
+
+@keyframes failsafe-hide {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .preloader {
+    display: none;
+  }
+}

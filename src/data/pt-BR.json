@@ -1,0 +1,297 @@
+{
+  "meta": {
+    "home": "Início do MimiShow",
+    "language": "Trocar idioma",
+    "skip": "Pular para o conteúdo",
+    "soundOn": "Ligar o som",
+    "soundOff": "Desligar o som",
+    "endShow": "Encerrar"
+  },
+  "home": {
+    "kicker": "Esta noite, no escuro",
+    "titleMain": "Mimi",
+    "titleAccent": "Show",
+    "tagline": "Um jogo de mímica para um celular e uma plateia inteira. A Mimi apresenta. Ninguém fala.",
+    "start": "Novo show",
+    "resume": "Voltar ao show",
+    "rules": "Como jogar",
+    "credit": "Feito por",
+    "author": "Pedro Chapelin"
+  },
+  "mascot": {
+    "home": [
+      "Ah, vocês chegaram. Eu estava esperando desde sempre.",
+      "Sentem-se. As cadeiras não mordem. Quase nunca.",
+      "Hoje à noite ninguém fala. Eu adoro silêncio."
+    ],
+    "murmurs": [
+      "Não pisque.",
+      "Eu também já fui gente. Acho.",
+      "Seu sapato está me olhando.",
+      "Contei vocês. Tem um a mais.",
+      "O silêncio é meu idioma favorito.",
+      "Eu moro atrás da cortina. É confortável.",
+      "Alguém viu minha sombra? Ah, sou eu.",
+      "Psiu. Ouviram isso?",
+      "Gosto de vocês. Do jeito que gosto de biscoitos."
+    ],
+    "handoff": [
+      "Passe o celular. Devagar. Eu estou vendo.",
+      "Só a estrela da vez pode olhar. Os outros, fechem os olhos. Ou não.",
+      "Shhh. A palavra está com fome de segredo."
+    ],
+    "reveal": [
+      "Decore. Depois esqueça que eu existo.",
+      "O destino escolheu por você. Eu só assisti.",
+      "Não gostou? Eu troco. Mas cobro."
+    ],
+    "acting": [
+      "Mexa-se. Eu sei que você consegue.",
+      "Use o corpo todo. Eu uso o meu inteiro.",
+      "A plateia está quieta. Quieta demais."
+    ],
+    "tense": [
+      "O tempo está acabando. O meu nunca acaba.",
+      "Tic. Tac. Tic.",
+      "Rápido, antes que a luz apague."
+    ],
+    "scoring": [
+      "Quem foi? Pode contar. Eu guardo segredos.",
+      "Hora da verdade. Eu adoro a verdade.",
+      "Aponte para quem acertou. Eu vou lembrar."
+    ],
+    "hit": [
+      "Bravo. Vou guardar esse aplauso numa caixinha.",
+      "Que lindo. Quase chorei. Quase.",
+      "Vocês se entendem sem palavras. Como eu e o escuro."
+    ],
+    "miss": [
+      "Ninguém? Tudo bem. Eu também não entendi.",
+      "Silêncio total. Meu som favorito.",
+      "A palavra fugiu. Ela volta. Elas sempre voltam."
+    ],
+    "winner": [
+      "Temos uma estrela. Vou colocar na minha coleção.",
+      "Fim do show. Ou começo de outro?",
+      "Aplausos. Mais alto. Mais alto."
+    ],
+    "rules": [
+      "Ajuste como quiser. Eu me adapto a tudo.",
+      "Regras são como sombras. Sempre por perto.",
+      "Escolha com cuidado. Ou não. Eu me divirto igual."
+    ],
+    "empty": [
+      "O palco está vazio. Tão vazio quanto eu gosto.",
+      "Ninguém aqui. Só eu. Como sempre."
+    ],
+    "noSkips": [
+      "Sem pontos, sem trocas. Eu não faço fiado.",
+      "Vai ter que ser essa mesma. Coragem."
+    ],
+    "confirm": [
+      "Já vão embora? Mas a noite é uma criança.",
+      "Apagar tudo? Eu adoro apagar coisas."
+    ]
+  },
+  "modes": {
+    "solo": {
+      "title": "Cada um por si",
+      "description": "Quem faz a mímica e quem acerta marcam pontos. De 2 a 15 pessoas."
+    },
+    "teams": {
+      "title": "Em equipes",
+      "description": "As equipes se revezam e só a sua equipe adivinha. Duas ou mais pessoas por equipe."
+    }
+  },
+  "difficulties": {
+    "easy": "Fácil",
+    "medium": "Média",
+    "hard": "Difícil"
+  },
+  "categories": {
+    "animals": "Animais",
+    "food": "Comidas e bebidas",
+    "objects": "Objetos",
+    "places": "Lugares",
+    "jobs": "Profissões",
+    "characters": "Personagens e famosos",
+    "sports": "Esportes e brincadeiras",
+    "party": "Música e festa",
+    "nature": "Natureza",
+    "transport": "Transportes"
+  },
+  "teamDefaults": [
+    "Equipe Vermelha",
+    "Equipe Dourada",
+    "Equipe Azul",
+    "Equipe Roxa"
+  ],
+  "wizard": {
+    "progress": "Ato {current} de {total}: {name}",
+    "acts": ["Formato", "Elenco", "Regras"],
+    "back": "Voltar",
+    "next": "Avançar",
+    "finish": "Abrir as cortinas",
+    "mode": {
+      "word": "Ato I",
+      "title": "Como vamos jogar?",
+      "description": "Escolha o formato do show de hoje."
+    },
+    "players": {
+      "word": "Ato II",
+      "title": "O elenco",
+      "description": "Adicione todo mundo do mais velho para o mais novo. Essa é a ordem da mímica, e dá para reorganizar com as setas.",
+      "teamsDescription": "Escreva cada nome no card da equipe que a pessoa vai defender. Toque na seta colorida para trocar alguém de lado. A ordem dentro da equipe é a ordem da mímica.",
+      "label": "Nome de quem joga",
+      "placeholder": "Ex.: Ana",
+      "add": "Adicionar pessoa",
+      "count": "{count} de {max} pessoas",
+      "minimum": "Pelo menos {min} pessoas",
+      "full": "O elenco está completo ({max} pessoas).",
+      "alreadyIn": "{name} já está no elenco.",
+      "duplicate": "Repetido",
+      "rename": "Nome da pessoa {index}",
+      "remove": "Remover {name}",
+      "moveUp": "Subir {name}",
+      "moveDown": "Descer {name}",
+      "empty": "Ninguém no palco ainda. A Mimi está ficando sozinha.",
+      "teamsLabel": "Número de equipes",
+      "teamName": "Nome da equipe {index}",
+      "teamSize": "{count} pessoas",
+      "teamTooSmall": "Precisa de pelo menos {min}",
+      "addTo": "Adicionar na {team}",
+      "moveTo": "Mover {name} para a {team}",
+      "renameMember": "Nome de {name}",
+      "shuffle": "Sortear equipes",
+      "teamEmpty": "Ninguém aqui ainda. A cadeira está fria."
+    },
+    "rules": {
+      "word": "Ato III",
+      "title": "Regras da casa",
+      "description": "Arraste para ajustar. A Mimi tem opiniões sobre tudo.",
+      "target": "Pontos para vencer",
+      "targetValue": "{value} pts",
+      "time": "Tempo de cada mímica",
+      "timeValue": "{value} s",
+      "skips": "Trocas de palavra grátis",
+      "skipsValue": "{value}",
+      "skipsHint": "Depois delas, cada troca custa {points} ponto. Sem pontos, sem troca.",
+      "categories": "Categorias no jogo",
+      "categoriesHint": "Toda categoria tem palavras fáceis, médias e difíceis.",
+      "all": "Todas",
+      "comments": {
+        "targetLow": "Um show curtinho. Eu ia me apegar.",
+        "targetHigh": "Vamos até de madrugada. Ótimo.",
+        "timeLow": "Trinta segundos. Que pressa, hein.",
+        "timeHigh": "Uma eternidade. Adoro eternidades.",
+        "skipsLow": "Nenhuma troca. Corajoso. Ou tolo.",
+        "skipsHigh": "Tantas trocas. Alguém está com medo.",
+        "categoriesOne": "Uma categoria só. Gosto de obsessões.",
+        "categoriesAll": "Tudo junto. Do jeito que eu gosto."
+      }
+    }
+  },
+  "stage": {
+    "round": "Rodada {round}",
+    "handoff": {
+      "kicker": "Próxima atração",
+      "title": "Passe o celular para",
+      "team": "Pela {team}",
+      "ready": "Sou eu",
+      "hint": "A partir de agora, só {name} olha a tela."
+    },
+    "reveal": {
+      "kicker": "O destino sorteou",
+      "points": "+{points}",
+      "hold": "Segure para ver",
+      "holding": "Solte para esconder",
+      "holdHint": "A palavra só aparece enquanto seu dedo está no cartão.",
+      "skip": "Trocar palavra",
+      "skipsFree": "Restam {count} trocas grátis",
+      "skipsFreeOne": "Resta 1 troca grátis",
+      "skipPenalty": "Trocar agora custa {points} ponto",
+      "noPoints": "Sem pontos para trocar",
+      "skipped": "Palavra nova. Segure para ver.",
+      "start": "Começar a mímica"
+    },
+    "acting": {
+      "kicker": "No ar",
+      "silence": "Proibido falar",
+      "guessed": "Acertaram",
+      "secondsLeft": "Faltam {seconds} segundos"
+    },
+    "scoring": {
+      "kicker": "Hora da verdade",
+      "title": "Quem acertou?",
+      "wordWas": "A palavra era",
+      "teamGuessed": "{team} acertou",
+      "pick": "Toque em quem acertou primeiro.",
+      "nobody": "Ninguém acertou"
+    },
+    "result": {
+      "hit": "{name} acertou!",
+      "points": "+{points} para {names}",
+      "pair": "{a} e {b}",
+      "word": "Palavra: {word}",
+      "miss": "Ninguém pontuou",
+      "next": "Próxima estrela"
+    },
+    "scoreboard": {
+      "title": "Placar",
+      "target": "Meta: {target}"
+    },
+    "skipPenaltyToast": "-{points} ponto pela troca",
+    "confirmEnd": {
+      "title": "Encerrar o show?",
+      "description": "O jogo atual e o placar vão sumir no escuro.",
+      "confirm": "Encerrar show",
+      "cancel": "Continuar jogando"
+    },
+    "empty": {
+      "title": "Palco vazio",
+      "description": "Monte o elenco e a Mimi cuida do resto.",
+      "start": "Novo show"
+    }
+  },
+  "winner": {
+    "kicker": "E a estrela da noite é",
+    "subtitle": "{score} pontos",
+    "lastHit": "Último lance: {name} acertou {word}, +{points}",
+    "rematch": "Revanche",
+    "newShow": "Novo show",
+    "home": "Voltar ao início"
+  },
+  "rules": {
+    "kicker": "O roteiro",
+    "title": "Como jogar",
+    "intro": "O MimiShow é jogado com um celular só, que passa de mão em mão. A Mimi cuida da ordem, do sorteio, do cronômetro e do placar.",
+    "steps": [
+      {
+        "title": "Monte o elenco",
+        "body": "Cada um por si ou em equipes. Adicione as pessoas do mais velho para o mais novo, ajuste os pontos, o tempo e as trocas, e escolha as categorias de palavras."
+      },
+      {
+        "title": "Receba a palavra",
+        "body": "Quem vai fazer a mímica toca em \"Sou eu\". A dificuldade é sorteada (fácil vale 1 ponto, média 2, difícil 3) e a palavra só aparece enquanto o dedo segura o cartão."
+      },
+      {
+        "title": "Troque se precisar",
+        "body": "Cada rodada tem algumas trocas grátis. Depois disso, cada troca custa 1 ponto, e sem pontos não dá para trocar."
+      },
+      {
+        "title": "Faça a mímica",
+        "body": "Inicie o cronômetro e represente a palavra sem falar, sem fazer sons e sem apontar para objetos. O resto da turma grita os palpites."
+      },
+      {
+        "title": "Marque os pontos",
+        "body": "Cada um por si: quem acertou e quem fez a mímica ganham os pontos. Em equipes: a equipe pontua. Se o tempo acabar sem acerto, ninguém pontua."
+      },
+      {
+        "title": "Feche as cortinas",
+        "body": "Quem chegar primeiro à meta vence na hora, e o show termina."
+      }
+    ],
+    "forbidden": "Proibido: falar, mexer a boca formando palavras, desenhar letras no ar e apontar para o próprio objeto.",
+    "start": "Começar um show"
+  }
+}

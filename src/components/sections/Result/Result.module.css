@@ -1,0 +1,27 @@
+.points {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: var(--space-1);
+  padding: var(--space-4);
+}
+
+.value {
+  font-size: clamp(4rem, 22vw, 6.5rem);
+  font-weight: 900;
+  line-height: 0.9;
+  color: var(--gold);
+  animation: bloom 0.7s var(--ease-spring);
+}
+
+.scorers {
+  color: var(--fg-dim);
+  text-align: center;
+}
+
+@keyframes bloom {
+  from {
+    opacity: 0;
+    scale: 0.4;
+  }
+}

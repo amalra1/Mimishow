@@ -1,0 +1,165 @@
+.teams,
+.cards {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-4);
+}
+
+.card {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  background: var(--bg-2);
+  border: var(--stroke) solid var(--line);
+  border-top: 4px solid var(--tone);
+  border-radius: var(--radius);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 var(--space-2);
+}
+
+.swatch {
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  background: var(--tone);
+  rotate: 45deg;
+}
+
+.teamName {
+  flex: 1;
+  width: 0;
+  min-width: 0;
+  min-height: 44px;
+  padding: 0;
+  font-size: max(16px, var(--text-md));
+  color: var(--tone);
+  background: none;
+  border: 0;
+  border-bottom: var(--stroke) dashed transparent;
+  border-radius: 0;
+  outline: none;
+  transition: border-color var(--dur-fast);
+}
+
+.teamName:focus {
+  border-bottom-color: var(--tone);
+}
+
+.size {
+  flex-basis: 100%;
+  padding-left: calc(12px + var(--space-2));
+  color: var(--fg-dim);
+}
+
+.small {
+  color: var(--crimson);
+}
+
+.members {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.member {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  min-height: 48px;
+  padding: 0 var(--space-1) 0 var(--space-3);
+  background: var(--bg-3);
+  border: var(--stroke) solid transparent;
+  border-radius: var(--radius);
+  transition: border-color var(--dur-fast);
+}
+
+.member:focus-within {
+  border-color: var(--gold);
+}
+
+.duplicate {
+  border-color: var(--crimson);
+}
+
+.memberName {
+  flex: 1;
+  width: 0;
+  min-width: 0;
+  min-height: 44px;
+  padding: 0;
+  font-size: max(16px, var(--text-md));
+  background: none;
+  border: 0;
+  outline: none;
+}
+
+.tag {
+  flex-shrink: 0;
+  color: var(--crimson);
+}
+
+.moveTo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  height: 36px;
+  padding-inline: 8px;
+  color: var(--fg-dim);
+  border: var(--stroke) solid var(--line);
+  border-radius: var(--radius);
+  transition:
+    border-color var(--dur-fast),
+    scale var(--dur-fast) var(--ease-spring);
+}
+
+.moveTo:active {
+  scale: 0.9;
+}
+
+.moveIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.moveSwatch {
+  width: 10px;
+  height: 10px;
+  background: var(--tone);
+  rotate: 45deg;
+}
+
+.remove {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 44px;
+  color: var(--fg-faint);
+  transition: color var(--dur-fast);
+}
+
+.removeIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.vacant {
+  padding-block: var(--space-2);
+  color: var(--fg-faint);
+  text-align: center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .moveTo:hover {
+    border-color: var(--tone);
+  }
+
+  .remove:hover {
+    color: var(--crimson);
+  }
+}

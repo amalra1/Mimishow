@@ -1,0 +1,52 @@
+.fate {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-1) var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  color: var(--bg);
+  background: var(--tone);
+  border-radius: var(--radius);
+  transition: background-color 0.08s;
+}
+
+.difficulty {
+  font-size: var(--text-xl);
+}
+
+.points {
+  font-size: var(--text-xl);
+}
+
+.category {
+  grid-column: 1 / -1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  opacity: 0.8;
+}
+
+.categoryIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.settled {
+  animation: land 0.5s var(--ease-spring);
+}
+
+.info {
+  color: var(--fg-dim);
+  font-size: var(--text-sm);
+  text-align: center;
+}
+
+.cost {
+  color: var(--crimson);
+}
+
+@keyframes land {
+  from {
+    scale: 1.08;
+  }
+}

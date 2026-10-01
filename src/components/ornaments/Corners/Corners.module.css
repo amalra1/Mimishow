@@ -1,0 +1,33 @@
+.corners {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.corner {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: var(--corner, var(--gold));
+  rotate: 45deg;
+}
+
+.corner:nth-child(1) {
+  top: -5px;
+  left: -5px;
+}
+
+.corner:nth-child(2) {
+  top: -5px;
+  right: -5px;
+}
+
+.corner:nth-child(3) {
+  bottom: -5px;
+  left: -5px;
+}
+
+.corner:nth-child(4) {
+  right: -5px;
+  bottom: -5px;
+}

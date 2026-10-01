@@ -1,0 +1,123 @@
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  min-height: 54px;
+  padding: 0.7em 1.4em;
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: center;
+  border: var(--stroke) solid transparent;
+  border-radius: var(--radius);
+  user-select: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    background-color var(--dur-fast),
+    border-color var(--dur-fast),
+    color var(--dur-fast),
+    opacity var(--dur-fast),
+    scale var(--dur-fast) var(--ease-spring);
+}
+
+.block::before,
+.block::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  background: currentColor;
+  rotate: 45deg;
+  translate: 0 -50%;
+  opacity: 0.55;
+}
+
+.block::before {
+  left: 14px;
+}
+
+.block::after {
+  right: 14px;
+}
+
+.lg {
+  min-height: 62px;
+  font-size: var(--text-md);
+}
+
+.primary {
+  color: var(--fg);
+  background: var(--wine);
+  border-color: var(--wine);
+}
+
+.yellow {
+  color: var(--bg);
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
+.ghost {
+  color: var(--fg);
+  background: transparent;
+  border-color: var(--line-strong);
+}
+
+.quiet {
+  min-height: 44px;
+  padding: 0.4em 0.6em;
+  font-size: var(--text-xs);
+  color: var(--fg-dim);
+}
+
+.block {
+  width: 100%;
+}
+
+.icon {
+  width: 1.2em;
+  height: 1.2em;
+  flex-shrink: 0;
+  transition: translate var(--dur) var(--ease-out);
+}
+
+.button:active:not(:disabled) {
+  scale: 0.97;
+}
+
+.button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .primary:hover:not(:disabled) {
+    background: var(--crimson);
+    border-color: var(--crimson);
+  }
+
+  .yellow:hover:not(:disabled) {
+    background: var(--fg);
+    border-color: var(--fg);
+  }
+
+  .ghost:hover:not(:disabled) {
+    color: var(--bg);
+    background: var(--fg);
+    border-color: var(--fg);
+  }
+
+  .quiet:hover:not(:disabled) {
+    color: var(--fg);
+  }
+
+  .button:hover:not(:disabled) .icon {
+    translate: 3px 0;
+  }
+}

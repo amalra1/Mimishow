@@ -1,0 +1,271 @@
+.mascot {
+  --px: 0;
+  --py: 0;
+  --pupil: var(--gold);
+  position: relative;
+  width: 100%;
+}
+
+.svg {
+  width: 100%;
+  overflow: visible;
+}
+
+.floor {
+  fill: #000;
+  opacity: 0.35;
+}
+
+.cloakShape {
+  stroke: var(--fg);
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+.smoke {
+  fill: none;
+  stroke: var(--fg-faint);
+  stroke-width: 1.2;
+  stroke-linecap: round;
+  stroke-dasharray: 3 9;
+  opacity: 0.6;
+  animation: smoke 2.4s linear infinite;
+}
+
+.ruff {
+  fill: none;
+  stroke: var(--crimson);
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+.limb,
+.finger {
+  fill: none;
+  stroke: var(--fg);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.glove {
+  fill: var(--fg);
+  stroke: var(--fg);
+  stroke-width: 2;
+}
+
+.face {
+  fill: var(--fg);
+  stroke: var(--fg);
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+.diamond {
+  fill: var(--crimson);
+}
+
+.hole {
+  fill: var(--bg);
+}
+
+.line,
+.teeth {
+  fill: none;
+  stroke: var(--bg);
+  stroke-width: 3.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.teeth {
+  stroke-width: 2;
+}
+
+.tear {
+  fill: var(--slate);
+}
+
+.pupils {
+  transform: translate(calc(var(--px) * 3px), calc(var(--py) * 2px));
+  transition: transform 0.25s var(--ease-out);
+  animation: blink 5.5s infinite;
+  transform-box: view-box;
+  transform-origin: 100px 74px;
+}
+
+.pupil {
+  fill: var(--pupil);
+}
+
+.figure,
+.head,
+.arm,
+.cloak {
+  transform-box: view-box;
+}
+
+.figure {
+  animation: hover 3.6s ease-in-out infinite;
+}
+
+.cloak {
+  transform-origin: 100px 120px;
+  animation: sway 4.8s ease-in-out infinite;
+}
+
+.head {
+  transform-origin: 100px 128px;
+  transition:
+    rotate var(--dur) var(--ease-out),
+    scale var(--dur) var(--ease-out);
+}
+
+.arm {
+  transition: rotate 0.6s var(--ease-spring);
+}
+
+.armLeft {
+  transform-origin: 66px 150px;
+}
+
+.armRight {
+  transform-origin: 134px 150px;
+}
+
+.sly .head {
+  rotate: -8deg;
+}
+
+.sly .armLeft {
+  rotate: -128deg;
+}
+
+.sly .armRight {
+  rotate: 12deg;
+}
+
+.delight .armLeft {
+  rotate: 55deg;
+}
+
+.delight .armRight {
+  rotate: -55deg;
+}
+
+.tense {
+  --pupil: var(--crimson);
+}
+
+.tense .figure {
+  animation: shiver 0.16s linear infinite;
+}
+
+.tense .armLeft {
+  rotate: -150deg;
+}
+
+.tense .armRight {
+  rotate: 150deg;
+}
+
+.cheer .figure {
+  animation: rise 0.8s ease-in-out infinite;
+}
+
+.cheer .armLeft {
+  rotate: 150deg;
+}
+
+.cheer .armRight {
+  rotate: -150deg;
+}
+
+.sad .figure {
+  animation: none;
+  translate: 0 6px;
+}
+
+.sad .head {
+  rotate: 10deg;
+}
+
+.sad .armLeft {
+  rotate: 6deg;
+}
+
+.sad .armRight {
+  rotate: -6deg;
+}
+
+.shh .armLeft {
+  rotate: -143deg;
+}
+
+.shh .armRight {
+  rotate: 10deg;
+}
+
+.creep .head {
+  rotate: 14deg;
+  scale: 1.08;
+}
+
+.creep .armLeft {
+  rotate: 38deg;
+}
+
+.creep .armRight {
+  rotate: -38deg;
+}
+
+@keyframes hover {
+  50% {
+    translate: 0 -7px;
+  }
+}
+
+@keyframes sway {
+  0%,
+  100% {
+    transform: skewX(0deg);
+  }
+  50% {
+    transform: skewX(4deg);
+  }
+}
+
+@keyframes smoke {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+@keyframes blink {
+  0%,
+  93%,
+  100% {
+    scale: 1 1;
+  }
+  96% {
+    scale: 1 0.1;
+  }
+}
+
+@keyframes shiver {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  25% {
+    translate: -1.5px 0;
+  }
+  75% {
+    translate: 1.5px 0;
+  }
+}
+
+@keyframes rise {
+  50% {
+    translate: 0 -14px;
+  }
+}

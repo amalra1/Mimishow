@@ -1,0 +1,24 @@
+.divider {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: 100%;
+  color: currentColor;
+}
+
+.line {
+  flex: 1;
+  height: var(--stroke);
+  background: currentColor;
+  opacity: 0.6;
+}
+
+.small {
+  width: 8px;
+  height: 8px;
+}
+
+.center {
+  width: 22px;
+  height: 22px;
+}

@@ -1,0 +1,65 @@
+.controls {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: calc(env(safe-area-inset-top) + var(--space-3)) var(--gutter)
+    var(--space-3);
+  pointer-events: none;
+  transition: background-color var(--dur);
+}
+
+.scrolled {
+  background: var(--bg);
+  border-bottom: var(--stroke) solid var(--line);
+}
+
+.group {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.orb {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  color: var(--fg);
+  background: var(--bg);
+  border: var(--stroke) solid var(--line-strong);
+  border-radius: 50%;
+  pointer-events: auto;
+  transition:
+    color var(--dur-fast),
+    background-color var(--dur-fast),
+    border-color var(--dur-fast),
+    rotate var(--dur) var(--ease-spring);
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+}
+
+.language {
+  letter-spacing: 0.08em;
+  color: var(--gold);
+}
+
+.off {
+  color: var(--fg-faint);
+}
+
+.orb:active {
+  rotate: -12deg;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .orb:hover {
+    color: var(--bg);
+    background: var(--gold);
+    border-color: var(--gold);
+  }
+}
